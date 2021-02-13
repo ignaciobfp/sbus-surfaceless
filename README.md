@@ -1,7 +1,7 @@
 # sbus-surfaceless
 A project for testing an VTOL plane with no control surfaces, only the two tilting motors
 
-This is a very simple sketch for a personal project, which uses a flight controller with sbus output and a VTOL plane with two tilting motors and no control surfaces.
+This is a very simple sketch for a personal project, which uses an ardupilot-based flight controller with sbus output in order to control VTOL plane with two tilting motors and no control surfaces.
 
 Since SBUS signal uses a considerably high baud rate (100.000 bps), reading this signal usually requires a dedicated hardware serial port on low-power microcontrollers. Arduino nano only has one hardware serial port, which makes it suboptimal for this project (no debugging is possible since that is the port used for USB communication), so a Teensy LC was used instead. Make sure to use the correct servo library for Teensy, since they have the same name the Arduino IDE might use the wrong one.
 
