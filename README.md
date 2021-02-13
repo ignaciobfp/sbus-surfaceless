@@ -15,3 +15,7 @@ The value of the flight mode channel is NOT present on the SBUS output on ardupi
 This behaviour should be possible to implement properly in the flight controler software, but since I lack knowledge about the huge codebase and this implementation is for a prototype, it is an easier and effective solution for the time being.
 
 This project was vaguely inspired by the control method used by Eflite in its Convergence VTOL rc model, which has control surfaces, but also moves the tilt motors to help a bit on rolls.
+
+Connection diagram
+
+<a href="https://i.imgur.com/jo9Wan7.jpg"><img src="https://i.imgur.com/jo9Wan7l.jpg"></a>
