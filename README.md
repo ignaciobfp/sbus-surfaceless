@@ -16,6 +16,6 @@ This behaviour should be possible to implement properly in the flight controler 
 
 This project was vaguely inspired by the control method used by Eflite in its Convergence VTOL rc model, which has control surfaces, but also moves the tilt motors to help a bit on rolls.
 
-Recommended connection diagram, using a Y servo cable, splitting the signals and powering the servos from the FC 5V line (WARNING: Make sure your tilt servos maximum power consuption is not greater than the power provided by the flight controller, since SBUS output is not meant to power servos)
+Recommended connection diagram follow.s I used a triple Y servo cable, cutting and splitting two of the signals and connecting them to the outputs in the Teensy. The remaining servo output is soldered to Teensy VCC input and to serial2 to read the SBUS (do NOT cut this signal wire!). This way the servos and teensy are powered from the FC 5V line (WARNING: Make sure your tilt servos maximum power consuption is not greater than the rated amps of the voltage regulator in your flight controller, since SBUS 5V output is not meant to provide high currents)
 
 <a href="https://i.imgur.com/jo9Wan7.jpg"><img src="https://i.imgur.com/jo9Wan7l.jpg"></a>
