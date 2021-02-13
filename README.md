@@ -16,6 +16,6 @@ This behaviour should be possible to implement properly in the flight controler 
 
 This project was vaguely inspired by the control method used by Eflite in its Convergence VTOL rc model, which has control surfaces, but also moves the tilt motors to help a bit on rolls.
 
-Connection diagram
+Recommended connection diagram, using a Y servo cable, splitting the signals and powering the servos from the FC 5V line (WARNING: Make sure your tilt servos maximum power consuption is not greater than the power provided by the flight controller, since SBUS output is not meant to power servos)
 
 <a href="https://i.imgur.com/jo9Wan7.jpg"><img src="https://i.imgur.com/jo9Wan7l.jpg"></a>
