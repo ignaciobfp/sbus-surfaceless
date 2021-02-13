@@ -7,9 +7,9 @@ Since SBUS signal uses a considerably high baud rate (100.000 bps), reading this
 
 This Teensy microcontroller is connected to the sbus output of a Matek F765 Wing running ardupilot, and it does the following:
 
-*If the current flight mode is a copter mode, it just passes the flight controller servo movements as-is
+* If the current flight mode is a copter mode, it just passes the flight controller servo movements as-is
 
-*If the current flight mode is a plane mode, read the servo position from flight controller, and add the corresponding movements from two pre-configured channel outputs from the flight controller (one for ailerons, one for elevator) to the tilt servos, so they change direction of the thrust and a similar effect of a control surface moving can be achieved.
+* If the current flight mode is a plane mode, read the servo position from flight controller, and add the corresponding movements from two pre-configured channel outputs from the flight controller (one for ailerons, one for elevator) to the tilt servos, so they change direction of the thrust and a similar effect of a control surface moving can be achieved.
 
 The value of the flight mode channel is NOT present on the SBUS output on ardupilot, so it must be manually mixed in the transmitter.
 
